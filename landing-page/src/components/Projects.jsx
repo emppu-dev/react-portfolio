@@ -72,7 +72,7 @@ const Projects = () => {
             <h3 className='tracking-tight text-xl text-white'>More projects</h3>
           </a>
         </span>
-        <p className='mt-2 text-gray-500 tracking-tighter leading-tight'>More of my projects can be found on my GitHub, <a href='https://github.com/emppu-dev' target='blank'>@emppu-dev</a>.</p>
+        <p className='mt-2 text-gray-500 tracking-tighter leading-tight'>More of my projects can be found on my GitHub, <a href='https://github.com/emppu-dev' className='text-white underline' target='_blank'>@emppu-dev</a>.</p>
       </div>
     </div>
   );

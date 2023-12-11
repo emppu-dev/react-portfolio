@@ -80,7 +80,7 @@ const Info = () => {
       <FiChevronDown />
     </span>
   </summary>
-  <div className='p-4 text-gray-500 leading-tight text-left'>I don't really use Discord or Telegram. You can contact me by sending me an email at emppu@emppu.dev. Here is my PGP key.</div>
+  <div className='p-4 text-gray-500 leading-tight text-left'>I don't really use Discord or Telegram. You can contact me by sending me an email at <a href="mailto:emppu@emppu.dev" className='text-white underline'>emppu@emppu.dev</a>. Here is my <a href="https://emppu.dev/pgp.asc" className='text-white underline' target='_blank'>PGP key</a>.</div>
 </details>
 
 <details className={`group ${CLASS_NAMES.REVEAL} ${areasOfInterestActive ? CLASS_NAMES.ACTIVE : ''}`} onClick={() => setAreasOfInterestActive(!areasOfInterestActive)}>
@@ -100,7 +100,7 @@ const Info = () => {
       <FiChevronDown />
     </span>
   </summary>
-  <div className='p-4 text-gray-500 leading-tight text-left'>I'm fluent in Python and have multiple years of experience with it. I have a basic understanding of HTML, CSS, and PHP.</div>
+  <div className='p-4 text-gray-500 leading-tight text-left'>I'm fluent in Python and have multiple years of experience with it. I have a basic understanding of HTML, CSS, TypeScript, JavaScript, React and Angular.</div>
 </details>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaPhp, FaReact, FaPython, FaGithub } from 'react-icons/fa';
 
-const Stack = () => {
+const Projects = () => {
   const iconStyle = { color: '#00df9a' };
   return (
     <div className='grid lg:grid-cols-2 2xl:grid-cols-3 gap-4 mx-4 md:mx-[15vw] my-4' id='projects'>
@@ -78,4 +78,4 @@ const Stack = () => {
   );
 };
 
-export default Stack;
+export default Projects;

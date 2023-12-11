@@ -5,3 +5,11 @@
 body {
     background-color: #000300;
 }
+
+.chevron-icon {
+  transition: transform 0.3s ease; /* Add a transition for a smooth effect */
+}
+
+.chevron-icon.active {
+  transform: rotate(180deg); /* Rotate the chevron icon when active */
+}

@@ -2,24 +2,27 @@ import React, { useEffect } from 'react';
 import './index.css';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
-import Stack from './components/Stack';
+import Projects from './components/Projects';
+import Info from './components/Info';
 
 const App = () => {
-  useEffect(() => {
-    const handleSmoothScroll = (e) => {
-      e.preventDefault();
-      const targetId = e.target.getAttribute('href').substring(1);
-      const targetElement = document.getElementById(targetId);
-      if (targetElement) {
-        targetElement.scrollIntoView({
-          behavior: 'smooth',
-        });
-      }
-    };
+  const handleSmoothScroll = (targetId) => {
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+      });
+    }
+  };
 
+  useEffect(() => {
     const attachSmoothScroll = () => {
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener('click', handleSmoothScroll);
+        anchor.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = e.target.getAttribute('href').substring(1);
+          handleSmoothScroll(targetId);
+        });
       });
     };
 
@@ -38,9 +41,10 @@ const App = () => {
 
   return (
     <div>
-      <Navbar />
+      <Navbar handleSmoothScroll={handleSmoothScroll} />
       <Home />
-      <Stack />
+      <Projects />
+      <Info />
     </div>
   );
 };

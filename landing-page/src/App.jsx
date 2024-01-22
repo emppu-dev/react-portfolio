@@ -4,6 +4,7 @@ import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import Info from './components/Info';
+import Footer from './components/Footer';
 
 const App = () => {
   const handleSmoothScroll = (targetId) => {
@@ -45,6 +46,7 @@ const App = () => {
       <Home />
       <Projects />
       <Info />
+      <Footer/>
     </div>
   );
 };
